@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENDW Stock Entry</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Styles/stock_calc.css">
+    <script src="JavaScript/stock_calc.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header text-center fw-bold">
+                        ENDW Stock Entry
+                    </div>
+                    <div class="card-body">
+                        <form id="stockForm">
+
+                            <!-- Item -->
+                            <div class="mb-3">
+                                <label class="form-label">Item</label>
+                                <select id="item" class="form-select" required>
+                                    <option value="">-- Select Item --</option>
+                                </select>
+                            </div>
+
+                            <!-- Brand -->
+                            <div class="mb-3 d-none" id="brandSection">
+                                <label class="form-label">Brand</label>
+                                <select id="brand" class="form-select"></select>
+                                <input type="text" id="customBrand" class="form-control mt-2 d-none"
+                                    placeholder="Enter new brand">
+                            </div>
+
+                            <!-- Action -->
+                            <div class="mb-3">
+                                <label class="form-label">Action</label>
+                                <select id="action" class="form-select" required>
+                                    <option value="IN">Stock IN</option>
+                                    <option value="OUT">Stock OUT</option>
+                                </select>
+                            </div>
+
+                            <!-- Pallets -->
+                            <div class="mb-3">
+                                <label class="form-label">Pallets</label>
+                                <input type="number" id="pallets" class="form-control" value="0" min="0">
+                            </div>
+
+                            <!-- PCS -->
+                            <div class="mb-3">
+                                <label class="form-label">Loose PCS</label>
+                                <input type="number" id="pcs" class="form-control" value="0" min="0">
+                            </div>
+
+                            <!-- User -->
+                            <div class="mb-3">
+                                <label class="form-label">Entered By</label>
+                                <input type="text" id="user" class="form-control" placeholder="Store Keeper" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Submit Stock</button>
+                        </form>
+                        <div id="status" class="mt-3 text-center"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include JS separately -->
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+{
+  "items": [
+    {"id": "IT001", "name": "1.5 CTN", "pallet_std": 66},
+    {"id": "IT002", "name": "0.5 CTN", "pallet_std": 96},
+    {"id": "IT003", "name": "330 CTN", "pallet_std": 140},
+    {"id": "IT004", "name": "250 CTN", "pallet_std": 168},
+    {"id": "IT005", "name": "250 CUP", "pallet_std": 77},
+    {"id": "IT006", "name": "200 (30PCS)", "pallet_std": 100},
+    {"id": "IT007", "name": "200 (36PCS)", "pallet_std": 100},
+    {"id": "IT008", "name": "150 CUP", "pallet_std": 100},
+    {"id": "IT009", "name": "100 CUP", "pallet_std": 100},
+    {"id": "IT010", "name": "1.5 CP", "pallet_std": 112},
+    {"id": "IT011", "name": "0.5 CP", "pallet_std": 168},
+    {"id": "IT012", "name": "330 CP", "pallet_std": 248},
+    {"id": "IT013", "name": "250 CP", "pallet_std": 310},
+    {"id": "IT014", "name": "5G (5 Gallon)", "pallet_std": 32}
+  ],
+  "brands": [
+    "Ajmal Perfume",
+    "Al Jaleeb",
+    "Byblos",
+    "Burj Club",
+    "Emirates Water",
+    "Eco-friendly",
+    "Dubai Eco-friendly",
+    "Curio",
+    "Flora",
+    "Hilton",
+    "Melia",
+    "Metropolitan",
+    "Mecure",
+    "Mecure",
+    "Moscow",
+    "Natural",
+    "Sofitel",
+    "Taj jlt",
+    "Taj Exotica",
+    "Petro-chemicals",
+    "Ramee",
+    "Restart Fitness",
+    "XO Club"
+
+
+  ]
+}

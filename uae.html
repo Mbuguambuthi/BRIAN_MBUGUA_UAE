@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button type="button"> Player A: Mbugua</button>
+
+    <script>
+
+        const btn = document.querySelector('button');
+
+        btn.addEventListener('click', () => {
+            const name = prompt('Enter the player name');
+            btn.textContent = `Player A: ${name}`;
+
+        }
+        );
+
+    </script>
+</body>
+
+</html>
