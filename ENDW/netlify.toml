@@ -1,0 +1,26 @@
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/home/mbugua/Mbuthi_Mbugua/WEB Development Project/Projects/MBUGUA-UAE/ENDW"
+publishOrigin = "default"
+base = "/home/mbugua/Mbuthi_Mbugua/WEB Development Project/Projects/MBUGUA-UAE/ENDW"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
