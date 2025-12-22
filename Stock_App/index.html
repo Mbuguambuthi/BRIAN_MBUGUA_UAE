@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/Stock_App/Images/emirates.io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/Images/emirates.io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/Images/emirates.io/favicon-16x16.png">
+    <link rel="manifest" href="/Images/emirates.io/site.webmanifest">
+    <title>StockCalculator</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="Styles/styles.css">
+</head>
+
+<body>
+    <main class="container d-flex flex-column flex-fill ">
+        <div class="row">
+            <header class=" text-white text-center fw-bold p-1 mb-lg-0 border-bottom ">
+                <!-- <p>Emirates Natural Drinking Water LLC <br>
+                Since &copy;1979</p> -->
+                <img src="Images/Emirates_logo.jpeg" alt="ENDW logo" class="ENDW Logo">
+            </header>
+
+            <div class="card border-1 m-2 p-1">
+                <div class="card-header fw-bold text-black text-center">
+                    <!-- Add your form or content here -->
+                    <legend>Stock Calculator</legend>
+                </div>
+                <div class="card-body ">
+                    <form id="StockForm">
+
+                        <!-- ROW 1: ITEM -->
+                        <div class="row mb-3">
+                            <div class="col-12">
+                                <label for="Items" class="form-label">Item</label>
+                                <select name="Items" id="Items" class="form-select" required>
+                                    <option value="">--- Select Item ---</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- ROW 2: PALLETS & LOOSE PCS -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="No_Pallet" class="form-label">No. Pallets</label>
+                                <input type="number" class="form-control" id="No_Pallet" value="0" min="0">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="Loose_Pcs" class="form-label">Loose Pcs</label>
+                                <input type="number" class="form-control" id="Loose_Pcs" value="0" min="0">
+                            </div>
+                        </div>
+
+                        <!-- ROW 3: ACTION & USER -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <label for="Action" class="form-label">Action</label>
+                                <select name="Action" id="Action" class="form-select" required>
+                                    <option value="IN">IN</option>
+                                    <option value="OUT">OUT</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label for="user" class="form-label">Entered By</label>
+                                <input type="text" id="user" class="form-control" placeholder="Store Keeper" required>
+                            </div>
+                        </div>
+
+                        <!-- ROW 4: SUBMIT -->
+                        <div class="row">
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary w-100">
+                                    Submit Stock
+                                </button>
+                            </div>
+                        </div>
+
+                    </form>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-2 mt-2">
+        &copy; 2026 ENDW & EWF
+    </footer>
+
+    <!-- BOOTSTRAP JS BUNDLE CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- OPTIONAL: Your own JS -->
+    <script src="JavaScript/script.js"></script>
+</body>
+
+</html>
