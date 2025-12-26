@@ -1,0 +1,31 @@
+functionsDirectory = "/home/mbugua/Mbuthi_Mbugua/WEB Development Project/Projects/MBUGUA-UAE/Stock_App/netlify/functions"
+functionsDirectoryOrigin = "config-v1"
+plugins = []
+headers = []
+redirects = []
+
+[functions]
+
+[functions."*"]
+
+[build]
+publish = "/home/mbugua/Mbuthi_Mbugua/WEB Development Project/Projects/MBUGUA-UAE/Stock_App"
+publishOrigin = "config"
+commandOrigin = "config"
+base = "/home/mbugua/Mbuthi_Mbugua/WEB Development Project/Projects/MBUGUA-UAE/Stock_App"
+command = "# no build command"
+functions = "/home/mbugua/Mbuthi_Mbugua/WEB Development Project/Projects/MBUGUA-UAE/Stock_App/netlify/functions"
+
+[build.environment]
+
+[build.processing]
+
+[build.processing.css]
+
+[build.processing.html]
+
+[build.processing.images]
+
+[build.processing.js]
+
+[build.services]
