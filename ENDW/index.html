@@ -17,70 +17,78 @@
 </head>
 
 <body class="vh-100  bg-body-primary d-flex flex-column">
-    <main class="container bg-body-secondary flex-fill">
-        <div class="col">
-            <header class="bg-black text-white p-2 mb-lg-2 text-center ">
-                <h1>EMIRATES
-                    WATER FACTORY LLC</h1>
-            </header>
-            <div class="card ">
-                <div class="card-body p-1 m-1">
-                    <div class="card-header">
-                        <h1 class="card-title text-black text-center">TOTAL</h1>
+    <main class="container flex-fill d-flex justify-content-center align-content-center w-100 counter">
+        <div class="row">
+            <div class="card shadow-lg m-1 p-1">
+                <div class="card-body">
+                    <div class="card-header text-black text-center fw-bold fs-3">
+                        <p>Scrap Bottles Counter</p>
 
                     </div>
-                    <div class="count text-center border-primary-subtle">0</div>
-                    <div class="row" id="Entry"></div>
-                </div>
 
-                <div class="card-footer d-flex align-items-center justify-content-evenly">
-                    <div class="btn btn-primary btnTally ">PRESS</div>
-                    <div class="btn btn-sm btn-danger btnReset ">RESET
+                    <div class="col col-lg-12 mb-3 h-50">
+                        <p id="display" class="text-center fw-bold  display-1 mt-5">0</p>
+                        <p class="visualTaps fs-1"></p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="row">
+                            <div class="card d-flex align-items-center justify-content-center shadow-sm">
+                                <div class="card-body">
+                                    <div class="col me-2"></div>
+                                    <button class="btn btn-primary btn-sm increment" type="button">Add</button>
+                                    <button class="btn btn-danger btn-lg " type="reset">RESET</button>
+                                    <button class="btn btn-primary btn-sm decrement" type="button">Decrease</button>
+                                </div>
 
+                            </div>
+
+                        </div>
                     </div>
                 </div>
+
             </div>
 
-
+        </div>
         </div>
     </main>
+    <footer class="text-center text-black bg-body-tertiary p-1">
 
-
-
-    <footer class="blockquote-footer bg-dark text-white  text-center p-2 m-2">
-        <p class="">EWF@2025</p>
+        <p class="fw-bold">&copy; 2026 ENDW & EWF</p>
 
     </footer>
 
     <script>
-        const btnTally = document.querySelector(".btnTally");
-        const btnReset = document.querySelector(".btnReset");
-        const countDisplay = document.querySelector(".count");
+
+        const incrementBtn = document.querySelector(".increment");
+        const decrementBtn = document.querySelector(".decrement");
+        const resetBtn = document.querySelector(".btn-danger");
+        const display = document.getElementById("display");
+
+
+
         let count = 0;
 
-        btnTally.addEventListener("click", () => {
+        incrementBtn.addEventListener("click", () => {
             count += 4;
-            countDisplay.textContent = count;
-        }
-        );
+            display.textContent = count;
 
-        btnReset.addEventListener("click", () => {
+
+        });
+
+        decrementBtn.addEventListener("click", () => {
+            count -= 4;
+            display.textContent = count;
+
+
+        });
+
+        resetBtn.addEventListener("click", () => {
             count = 0;
-            countDisplay.textContent = count;
+            display.textContent = count;
 
-
-        }
-        );
+        });
 
     </script>
-
-    <script>
-        if ("serviceWorker" in navigator) {
-            navigator.serviceWorker.register("/service-worker.js");
-        }
-    </script>
-
-
 
 
 </body>
