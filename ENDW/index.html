@@ -27,9 +27,12 @@
                     </div>
 
                     <div class="col col-lg-12 mb-3 h-50">
+                        <p class="text-center display-1 fw-bold mt-1">Total</p>
                         <p id="display" class="text-center fw-bold  display-1 mt-5">0</p>
-                        <p class="visualTaps fs-1"></p>
+                        <p class="fw-bold text-start">Round: <span class="roundDisplay">0</span></p>
                     </div>
+
+
                     <div class="card-footer">
                         <div class="row">
                             <div class="card d-flex align-items-center justify-content-center shadow-sm">
@@ -63,31 +66,52 @@
         const decrementBtn = document.querySelector(".decrement");
         const resetBtn = document.querySelector(".btn-danger");
         const display = document.getElementById("display");
+        const round = document.querySelector(".roundDisplay");
 
 
 
         let count = 0;
+        let counter = 0;
 
         incrementBtn.addEventListener("click", () => {
             count += 4;
             display.textContent = count;
 
+            counter++;
+            round.textContent = counter;
+
 
         });
 
         decrementBtn.addEventListener("click", () => {
-            count -= 4;
+
+            if (count === 0 || counter === 0) {
+                count = 0;
+                counter = 0;
+
+            }
+            else {
+
+                count -= 4;
+                counter--;
+
+            };
             display.textContent = count;
+            round.textContent = counter;
+
 
 
         });
 
         resetBtn.addEventListener("click", () => {
             count = 0;
+            counter = 0;
             display.textContent = count;
+            round.textContent = counter;
+
+
 
         });
-
     </script>
 
 
