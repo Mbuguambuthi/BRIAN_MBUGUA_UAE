@@ -20,7 +20,7 @@
 </head>
 
 <body class="d-flex flex-column min-vh-100 ">
-    <main class="container flex-fill align-items-center">
+    <main class="container flex-fill d-flex justify-content-center align-items-center">
         <div class="row ">
             <header class=" text-white text-center fw-bold p-2 mb-lg-0 border-bottom ">
                 <!-- <p>Emirates Natural Drinking Water LLC <br>
@@ -28,10 +28,10 @@
                 <img src="Images/Emirates_logo.jpeg" alt="ENDW logo" class="ENDW Logo">
             </header>
 
-            <div class="card vw-50 align-items-center justify-content-evenly border-1 m-2 p-1">
+            <div class="card shadow-lg border-1 m-2 p-1">
                 <div class="card-header fw-bold text-black text-center">
                     <!-- Add your form or content here -->
-                    <legend>Stock Calculator</legend>
+                    <h1>Stock Calculator</h1>
                 </div>
                 <div class="card-body ">
                     <form id="StockForm">
@@ -39,7 +39,7 @@
                         <!-- ROW 1: ITEM -->
                         <div class="row mb-3">
                             <div class="col-12">
-                                <label for="Items" class="form-label">Item</label>
+                                <label for="Items" class="form-label fw-bold">Item</label>
                                 <select name="Items" id="Items" class="form-select" required>
                                     <option value="">--- Select Item ---</option>
                                 </select>
@@ -49,12 +49,12 @@
                         <!-- ROW 2: PALLETS & LOOSE PCS -->
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <label for="No_Pallet" class="form-label">No. Pallets</label>
+                                <label for="No_Pallet" class="form-label fw-bold">No. Pallets</label>
                                 <input type="number" class="form-control" id="No_Pallet" value="0" min="0">
                             </div>
 
                             <div class="col-md-6">
-                                <label for="Loose_Pcs" class="form-label">Loose Pcs</label>
+                                <label for="Loose_Pcs" class="form-label fw-bold">Loose Pcs</label>
                                 <input type="number" class="form-control" id="Loose_Pcs" value="0" min="0">
                             </div>
                         </div>
@@ -62,7 +62,7 @@
                         <!-- ROW 3: ACTION & USER -->
                         <div class="row mb-3">
                             <div class="col-md-6">
-                                <label for="Action" class="form-label">Action</label>
+                                <label for="Action" class="form-label fw-bold">Action</label>
                                 <select name="Action" id="Action" class="form-select" required>
                                     <option value="IN">IN</option>
                                     <option value="OUT">OUT</option>
@@ -70,16 +70,16 @@
                             </div>
 
                             <div class="col-md-6">
-                                <label for="user" class="form-label">Entered By</label>
+                                <label for="user" class="form-label fw-bold">Entered By</label>
                                 <input type="text" id="user" class="form-control" placeholder="Store Keeper" required>
                             </div>
                         </div>
 
                         <!-- ROW 4: SUBMIT -->
                         <div class="row">
-                            <div class="col-12">
-                                <button type="submit" class="btn btn-primary w-100">
-                                    Submit Stock
+                            <div class="col-12 d-flex justify-content-center">
+                                <button type="submit" class="btn btn-lg btn-primary">
+                                    Submit
                                 </button>
                             </div>
                         </div>
